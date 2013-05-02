@@ -15,6 +15,9 @@ else {
   $libs = '-llua5.1 -lm -ldl';
 }
 
+$cflags .= '-Wl,-E';
+$libs = '-llua-5.1 -lm -ldl';
+
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
